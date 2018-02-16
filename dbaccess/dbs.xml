@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databases>
+<db>
+    <name>Belgian Waffles</name>
+    <host>localhost</host>
+    <user>root</user>
+    <password> </password>
+</db>
+</databases>
