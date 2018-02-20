@@ -2,20 +2,18 @@
 class Indexmod extends Model{
     function __construct() {
         parent::__construct();   
-        //$file = pathinfo(__DIR__);
-
-        
-        //var_dump ($this->path);
-       // echo "</br>";
-        
-        
     }
     public function DBsNames($file = "dbs") {
+        //zwraca tablicę z danymi pliku XML
         $this->path = explode("\\", __DIR__);
         array_pop($this->path);
         $this->path = implode("\\", $this->path);
         $plik = $this->path."\\dbaccess\\".$file.'.xml';
-        return ($plik);
+        $xml = simplexml_load_file($plik);
+        $json = json_encode($xml);
+        $array = json_decode($json,TRUE);
+        
+        return ($array);
      
     }
 }

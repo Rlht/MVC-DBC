@@ -17,5 +17,6 @@ class View {
             $this->message = "Nie znaleziono pliku";
             require_once 'views/Error.php';
         }
+        require_once 'views/Footer.php';
     }
 }

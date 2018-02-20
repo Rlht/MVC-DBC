@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <databases>
 <db>
-    <name>Belgian Waffles</name>
+    <name>RelightPC</name>
     <host>localhost</host>
     <user>root</user>
-    <password> </password>
+    <password></password>
+</db>
+<db>
+    <name>Belgian Waffles</name>
+    <host>192.102.83.84</host>
+    <user>operator02</user>
+    <password>92c0d65ce4cda8d427bc20408df6fac7</password>  
+</db>
+<db>
+    <name>Belgian Waffles</name>
+    <host>192.123.121.188</host>
+    <user>Admin</user>
+    <password>nimdA</password>  
 </db>
 </databases>
