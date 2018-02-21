@@ -13,9 +13,15 @@
     <password>92c0d65ce4cda8d427bc20408df6fac7</password>  
 </db>
 <db>
-    <name>Belgian Waffles</name>
+    <name>NicNowegoSklepOnline</name>
     <host>192.123.121.188</host>
     <user>Admin</user>
     <password>nimdA</password>  
+</db>
+<db>
+    <name>Paris</name>
+    <host>193.158.129.190</host>
+    <user>Admin</user>
+    <password>admin123</password>
 </db>
 </databases>

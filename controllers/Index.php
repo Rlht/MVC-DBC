@@ -11,7 +11,7 @@
             
         }
     private function Main() {
-        $this->view->DBsNames = $this->model->DBsNames();
+        $this->view->DBsDataToArray = $this->model->DBsDataToArray();
         $this->view->Render();
     }
     }

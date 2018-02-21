@@ -3,7 +3,7 @@ class Indexmod extends Model{
     function __construct() {
         parent::__construct();   
     }
-    public function DBsNames($file = "dbs") {
+    public function DBsDataToArray($file = "dbs") {
         //zwraca tablicę z danymi pliku XML
         $this->path = explode("\\", __DIR__);
         array_pop($this->path);

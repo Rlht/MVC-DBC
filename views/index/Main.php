@@ -1,8 +1,8 @@
 <?php
     
     //var_dump ($this->DBsNames);    
-    $array = $this->DBsNames;
-
+    $array = $this->DBsDataToArray;
+    //var_dump ($array);
 ?>
 <style type="text/css">
     table {
@@ -10,6 +10,8 @@
         border-spacing:0;
         border-style:solid;
         border-color:#aaa;
+        background-color: white;
+        margin: 6px;
         
     }
     thead {       
@@ -26,6 +28,8 @@
     }
     tbody tr th {
         padding: 4px;
+        padding-left: 12px;
+        padding-right: 12px;
     };
 </style>
 <table>
@@ -45,7 +49,7 @@
             if (!empty($col)) {
                 echo $col;
             } else {
-                echo "BRAK";
+                echo " ";
             }
             echo "</th>";
         }
