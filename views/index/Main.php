@@ -12,6 +12,9 @@
         border-color:#aaa;
         background-color: white;
         margin: 6px;
+        position:absolute;
+        transform: translateX(-50%);
+        left:50%;
         
     }
     thead {       

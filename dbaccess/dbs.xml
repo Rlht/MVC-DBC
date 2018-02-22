@@ -24,4 +24,10 @@
     <user>Admin</user>
     <password>admin123</password>
 </db>
+<db>
+    <name>LV Warsaw</name>
+    <host>192.85.112.178</host>
+    <user>Operator03</user>
+    <password>asdope3</password>
+</db>
 </databases>

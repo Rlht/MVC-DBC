@@ -7,11 +7,11 @@ class Admin extends Controller {
             $this->view->page = "LoginScreen";
             require_once 'models/Adminmod.php';
             $this->model = new Adminmod();
-            if(isset($_POST["login"]) && ($_POST["pass"]))
+            if(!empty($_POST["login"]) || (!empty($_POST["pass"])))
             {
                 $this->tryLogin($_POST["login"],$_POST["pass"]);
             } else {
-                $this->emptyLogin();
+                $this->blankLogin();
             }
             
 
@@ -27,7 +27,7 @@ class Admin extends Controller {
         }
         $this->view->Render();
     }
-    private function emptyLogin() {
+    private function blankLogin() {
         $this->view->Render();
     }
     }

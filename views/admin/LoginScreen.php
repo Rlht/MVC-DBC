@@ -1,8 +1,3 @@
-<?php 
-if (isset($this->var_test)) {
-var_dump ($this->var_test);}
-
-?>
 
 <style>
 header {
@@ -38,7 +33,14 @@ input{
 	background-color: white;
 
 }
-    
+#wrong {
+    font-weight: bold;
+    position: absolute;
+    color: red;
+    transform: translate(-50%, -50%);
+    left:50%;
+    bottom: 34%;
+}    
 </style>
 
 <header>	
@@ -51,3 +53,12 @@ input{
 			<input id="log" type="submit" value="Zaloguj">
 		</form>
 	</article>
+<?php 
+
+if (isset($this->var_test)) {
+echo "<p id='wrong'> Nieprawidłowe hasło lub login </p>";
+}
+
+
+
+?>

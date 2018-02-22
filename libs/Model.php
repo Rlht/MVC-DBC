@@ -20,7 +20,6 @@ class Model {
         $statement->bindValue(':password', $pass, PDO::PARAM_STR);
         $statement->execute();
         $admin = $statement->fetch();
-        //var_dump($admin);
         return ($admin);
     }
 }
